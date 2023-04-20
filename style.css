@@ -11,7 +11,7 @@ body {
     background: radial-gradient(ellipse at center, #75E3FF 0%, #2388CB 47%, #3B849C 100%);
 }
 
-main {
+main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;

@@ -1,0 +1,12 @@
+
+html{
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: #75E3FF;
+    background: -moz-radial-gradient(center, #75E3FF 0%, #2388CB 47%, #3B849C 100%);
+    background: -webkit-radial-gradient(center, #75E3FF 0%, #2388CB 47%, #3B849C 100%);
+    background: radial-gradient(ellipse at center, #75E3FF 0%, #2388CB 47%, #3B849C 100%);
+}

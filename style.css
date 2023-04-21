@@ -25,3 +25,8 @@ main{
 .forecast{
         padding: 0.3em
     }
+
+.weather-icon{
+    background: none;
+    border: none;
+}

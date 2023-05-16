@@ -30,20 +30,20 @@ btn.addEventListener("click",function(){
     xhr.send();
 
     xhr.onload = function() {
-	    const body = JSON.parse(xhr.responseText)
-        let temperature = body.temperature
-	    let weatherStatus = body.weatherStatus
-        document.getElementById("temperature").innerHTML = `Temperature: ${temperature}\u00B0F`
-        document.getElementById("weatherStatus").innerHTML = `Weather Status: ${weatherStatus}`
+	    const body = JSON.parse(xhr.responseText);
+        let temperature = body.temperature;
+	    let weatherStatus = body.weatherStatus;
+        document.getElementById("temperature").innerHTML = `Temperature: ${temperature}\u00B0F`;
+        document.getElementById('weatherStatus').innerHTML = `weather Status: ${weatherStatus}`;
 }
 
 //-------------------------------Forecast-----------------------------------------
 const xhr2 = new XMLHttpRequest();
-xhr2.open("GET", `http://localhost:3000/weather/${latitude}/${longitude}`);
+xhr2.open("GET", `http://localhost:3000/5day/${latitude}/${longitude}`);
 xhr2.send();
 
 xhr2.onload = function() {
-	const body = JSON.parse(xhr2.responseText)
+	const body = JSON.parse(xhr2.responseText);
 	let forecast = body;
     let forecastElements = document.getElementsByClassName("forecast");
 	for (let i = 0; i < forecast.length; i++) {
